@@ -3,7 +3,7 @@ package ru.tework.spring6kafka;
 import java.math.BigDecimal;
 
 public class KafkaEventMy {
-    private Integer kafkaId;
+    private String kafkaId;
     private String title;
     private BigDecimal price;
     private Integer quantity;
@@ -11,18 +11,18 @@ public class KafkaEventMy {
     public KafkaEventMy() {
     }
 
-    public KafkaEventMy(Integer kafkaId, String title, BigDecimal price, Integer quantity) {
+    public KafkaEventMy(String kafkaId, String title, BigDecimal price, Integer quantity) {
         this.kafkaId = kafkaId;
         this.title = title;
         this.price = price;
         this.quantity = quantity;
     }
 
-    public Integer getKafkaId() {
+    public String getKafkaId() {
         return kafkaId;
     }
 
-    public void setKafkaId(Integer kafkaId) {
+    public void setKafkaId(String kafkaId) {
         this.kafkaId = kafkaId;
     }
 
